@@ -6,6 +6,7 @@ server.cfg
 /resources/*drebes*
 /resources/*Non-Branded-Cars*
 /resources/*defaultmaps*
+/resources/*custom-guns*
 
 
 # For Testing on live site + ignore and not push on local machines
