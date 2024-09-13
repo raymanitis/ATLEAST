@@ -1,0 +1,12 @@
+/cache
+/db
+.replxx_history
+server.cfg.bkp
+server.cfg
+/resources/*drebes*
+/resources/*Non-Branded-Cars*
+/resources/*defaultmaps*
+
+
+# For Testing on live site + ignore and not push on local machines
+/resources/*ignored*
