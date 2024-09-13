@@ -1,0 +1,17 @@
+['handcuffs'] = {
+    label = 'Handcuffs',
+    weight = 100,
+    stack = true
+},
+
+['zipties'] = {
+    label = 'Zipties',
+    weight = 10,
+    stack = true
+},
+
+['bolt_cutters'] = {
+    label = 'Bolt cutters',
+    weight = 500,
+    stack = false
+},

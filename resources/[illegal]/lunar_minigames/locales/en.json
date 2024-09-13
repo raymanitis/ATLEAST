@@ -1,0 +1,20 @@
+{
+    "keys_title": "Atslēgu Minispēle",
+    "keys_description": "Nospied taustiņus pareizajā secībā!",
+    "lockpick_title": "Atslēdz katru individuālo slēdzeni",
+    "lockpick_description": "Unlock each individual lock",
+    "lockpick_left": "Pagriezt pa kreisi",
+    "lockpick_right": "Pagriezt pa labi",
+    "lockpick_unlock": "Atslēgt",
+    "pincracker_title": "Koda Uzlaušanas Minispēle",
+    "pincracker_description": "Atrodi pareizo kombināciju",
+    "pincracker_crack": "Uzlauzt",
+    "sort_title": "Šķirošanas Minispēle",
+    "sort_description": "Noklikšķini uz skaitļiem augošā secībā",
+    "terminal_title": "Termināļa Minispēle",
+    "terminal_description": "Atkārto parādīto secību",
+    "words_title": "Vārdu Minispēle",
+    "words_description": "Iegaumē parādītos vārdus",
+    "words_seen": "Redzēts",
+    "words_new": "Jauns"
+}

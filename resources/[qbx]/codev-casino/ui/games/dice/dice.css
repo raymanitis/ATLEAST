@@ -1,0 +1,202 @@
+#dice {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dice-bet-amount-input {
+    height: 80%;
+    width: 63%;
+    padding-left: 6%;
+    border: none;
+    background-color: #3b3b3b;
+    border-radius: .25rem;
+    color: #FFFFFF;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dice-button-half {
+    border-right: 2px solid #3b3b3b;
+}
+
+.dice-game-screen {
+    width: 75%;
+    height: 71.7vh;
+    margin-left: 1%;
+    margin-top: .2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice-game-inner {
+    width: 60%;
+    height: 5%;
+    margin: 0 auto;
+    background-color: #3b3b3b;
+    border-radius: 2rem;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chances-wrapper {
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+    top: -100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dice-chance-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {
+    /* draw a triangle */
+    width: 0;
+    height: 0;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-top: .5rem solid #3b3b3b;
+    position: relative;
+    top: -.2rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.inputs-wrapper {
+    width: 41%;
+    margin: 0 auto;
+    height: 4%;
+    border-radius: 2rem;
+    position: absolute;
+    background: #1b1c1d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dice-details {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    flex-direction: row;
+    top: 75%;
+    background-color: #3b3b3b;
+    border-radius: .25rem;
+    position: absolute;
+}
+.dice-detail {
+    width: 33%;
+}
+
+.dice-detail .ctake-label {
+    margin-top: 0;
+}
+
+.dice-detail .ctake-text {
+    height: 2.5rem !important;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 95%;
+      margin: 0 auto;
+      height: 30%;
+      appearance: none;
+      border-radius: 1rem;
+      -webkit-appearance: none;
+      background-color: #09ff00;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 100%;
+      -webkit-appearance: none;
+      color: #ffffff;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 20px;
+      -webkit-appearance: none;
+      height: 1rem;
+      cursor: ew-resize;
+      background: #008cff;
+      box-shadow: -300px 0 0 300px #ff0000;
+    }
+}
+
+
+.dice-result {
+    width: 39%;
+    margin: 0 auto;
+    height: 10%;
+    position: absolute;
+    top: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dice-image {
+    width: 12%;
+    height: 90%;
+    position: absolute;
+    left: -5%;
+    margin-left: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    background-image: url('/ui/imgs/dice.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-shadow: 0 1px 0 #fff;
+    color: #b1bad3;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.dice-history {
+    width: 25%;
+    margin: 0 auto;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.dice-history-item {
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 2%;
+    background-color: #3b3b3b;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 1rem;
+    font-size: .8rem;
+    text-shadow: none;
+    overflow: hidden;
+}
+
+.dice-history-item.win {
+    background-color: #00e701;
+    color: #3b3b3b;
+}

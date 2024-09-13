@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+:root {
+
+  --main-color: #9534eb;
+
+}
+
+html {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Viga', sans-serif !important;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  animation: slide-top 1.5s ease forwards;
+}
+
+
+.gradient {
+  background: linear-gradient(0deg, var(--main-color) 0%, rgba(255, 22, 69, 0) 100%);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.animation {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.animation-effect {
+  background:
+    repeating-linear-gradient(45deg,
+      var(--main-color),
+      var(--main-color) 5%,
+      transparent 5%,
+      transparent 10%);
+  background-size: 100px 100px;
+  animation: move-it 2s linear infinite;
+
+  -webkit-mask-image: linear-gradient(to top, black 50%, transparent 100%);
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-it {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100px 0;
+  }
+}
+
+
+.sliding-content {
+  animation: slideInFromLeft 8s linear infinite;
+  /* 'forwards' will keep the element in the final state of the animation */
+  position: absolute;
+}
+
+.border-text1 {
+  display: inline-block;
+}
+
+.border-text1-animation {
+  animation: pulse 1.5s infinite alternate;
+  transform-origin: center;
+  animation-delay: 2s;
+  /* Start pulsing after sliding in */
+}
+
+/* Slide from left to right */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  5% {
+    transform: translateX(-20%);
+  }
+
+  95% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+
+.border-info {
+  flex: 0 0 auto;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 10;
+}
+
+.border-zoneinfo {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.border-icon {
+  fill: #ffffff;
+  width: 114px;
+  height: 73px;
+  z-index: 0;
+}
+
+.border-text {
+  color: #f9f7f7;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.border-warbanner {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.border-icon2 {
+  fill: #ffffff;
+  width: 102px;
+  height: 81px;
+}
+
+.border-text1 {
+  color: #ffffff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.border-icon4 {
+  fill: #ffffff;
+  width: 102px;
+  height: 81px;
+}
+
+.border-gangs {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.border-gang {
+  width: 244px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.border-image {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 197px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+.border-container1 {
+  flex: 0 0 auto;
+  width: 5px;
+  height: 30px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+.border-container2 {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.border-percent {
+  color: #ffffff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}

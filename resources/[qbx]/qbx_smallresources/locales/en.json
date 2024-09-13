@@ -1,0 +1,42 @@
+{
+   "error": {
+      "canceled": "Atcelts",
+      "cruise_control_disabled": "Kruīza kontrole ir izslēgta",
+      "cruise_control_unavailable": "Kruīza kontrole nav pieejama",
+      "deleted_recording": "Ieraksts izdzēsts!",
+      "later_aligator": "Uz redzēšanos, aligator!",
+      "stress_gain": "Jūties vairāk satraukts!",
+      "no_vehicle_nearby": "Nav transportlīdzekļa tuvumā",
+      "is_handcuffed": "Tu esi saslēgts rokudzelžos.",
+      "is_fastened": "Tu esi piesprādzējies."
+   },
+   "success": {
+      "cruise_control_enabled": "Kruīza kontrole pieejama",
+      "started_recording": "Ieraksīšana sākta!",
+      "stopped_recording": "Ieraksīšana apturēta!",
+      "saved_recording": "Ieraksts saglabāts!",
+      "stress_relief": "Jūties mierīgāk!",
+      "flipped_car": "Transportlīdzeklis veiksmīgi apgāzts!"
+   },
+   "progress": {
+      "eating": "Ēd...",
+      "drinking": "Dzer...",
+      "drinking_liquor": "Dzer alkoholu...",
+      "quick_sniff": "Ātra iešņauc...",
+      "smoking_crack": "Pīpē crack...",
+      "popping_pills": "Rij tabletes...",
+      "healing": "Dziedēšanās...",
+      "smoking_meth": "Pīpē meth...",
+      "lighting_joint": "Aizdedz Jointu..",
+      "flipping_car": "Apgāž transportlīdzekli..."
+   },
+   "info": {
+      "minutes": "minūtes",
+      "seconds": "sekundes",
+      "shuffleSeat": "Pārmaina sēdvietu"
+   },
+   "actions": {
+      "push_vehicle": "Nospied [~g~SHIFT~w~] un [~g~E~w~], lai stumtu transportlīdzekli, līdz [~g~SHIFT~w~] atlaišana",
+      "toggle_cruise_control": "Pārslēgt Kruīza Kontroli"
+   }
+}

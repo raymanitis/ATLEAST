@@ -1,0 +1,2 @@
+WEAPON_DIGISCANNER is registered in ESX by default.
+If it doesn't work check your inventory script and see if the weapon is added there.

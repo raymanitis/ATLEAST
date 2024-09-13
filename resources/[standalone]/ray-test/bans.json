@@ -1,0 +1,121 @@
+{
+    "5": {
+        "tokens": [
+            "5:87dc9b4dae9568064d762d76902ea785b1db63bf40b460ad5b77975eaa550e6e",
+            "3:11cc1708653f126872a0a5a2fb12f8133a9afc2e8d26c163dd921ed014add86e",
+            "2:f17b1041be2cd415306b0261ba427960d1c8f9aedb504d5bc9d5507a2e0f5964",
+            "4:67146f04f13091b058d95f45c59a390546d0efd01a63ae00a566e1843de8de10",
+            "4:cd0abd0232dd6565f20cb72c6947f9d0e60dbbaf99843a5c74eb284cd133439b",
+            "4:103be7e0d31e37c2225b09726038847bf560efe0606e6890be40d079f7598a0b"
+        ],
+        "xbl": "Invalid",
+        "ip": "94.186.103.92",
+        "reason": "Freecam Detected, flags: 3",
+        "steam": "Invalid",
+        "fg_ts": {
+            "t2": "86fcee3a:a76f48ba:187d77e6:c0c02437:056bcae9:8158b6f3:63ad0a17",
+            "t1": "432b236ae72a8095f7a536f95a57c5907addd6239ed95b5a995b26e6ea386eb6",
+            "t4": "15362812132132102424",
+            "t3": "68L5fbWxLh0z0gM2zydjwIiQAp4Ee7T4"
+        },
+        "name": "Treeze",
+        "live": "Invalid",
+        "manual": false,
+        "discord": "215094806597074944",
+        "license": "license:05e897855568aca3feea0f649cff3a292b8f09e1"
+    },
+    "2": {
+        "tokens": [
+            "2:00edbeec2cc4b0fd2c081ba6288cb917306f12b3b46d8159d130849a743e89e6",
+            "5:8e51748a6dfbd4ef8fcb3a7f88f5ca05a9eafb0459e56bd829e7cdb51c9d1113",
+            "4:712806302ae1b69060ae95be85bc18301da59f6d9a201d8b953e011ba8d7a0e2",
+            "4:0eb6e323f7cc121fd45a272851ac84e8510d218b15b77a8b432a1359a8046e2c",
+            "4:d9df071fdece416642ea708241df55dd1538370b5431beeb9ea4fac459c63eb4"
+        ],
+        "discord": "835556996622450699",
+        "ip": "85.254.75.198",
+        "reason": "Freecam Detected, flags: 3",
+        "steam": "Invalid",
+        "fg_ts": {
+            "t2": "b153b251:86fcee3a:4fc6a7eb:1af75e9d:056bcae9:35c0249e:187d77e6",
+            "t1": "c9e4a4494e83a2c5f3c88332db1daf730d76b15d0d4cbe0631840b11870d8f61",
+            "t4": "16422303521513769795",
+            "t3": "n4bjREwEFYRkFGV8elnnMbTpSbc30CuG"
+        },
+        "name": "Pencil",
+        "live": "Invalid",
+        "xbl": "Invalid",
+        "manual": false,
+        "license": "license:652faf73bc23b892e398483b5b69ca009f610b22"
+    },
+    "1": {
+        "tokens": [
+            "2:da7e63518b230a74d8b8e37cc46d7d0b3a34fcb27c354df30d6653007a9aec98",
+            "4:ab58bb2e8f726b849dbeade9dfa17c164b56bf5613de4d201f5d4f9e097398af",
+            "4:b1debdffc4dab7341c2fbe9547a9f90077bc441724c61eb9283c0cf474858385",
+            "4:1632e1fc8bac8e8e274b6f03a0cc861e1d6cbce4a2771f1853a7cbd1e0ded050"
+        ],
+        "discord": "1113876653144293386",
+        "ip": "92.49.28.67",
+        "reason": "Invisible Detected",
+        "steam": "Invalid",
+        "fg_ts": {
+            "t2": "a5effa75:da12432b:81414a86:7a59345d:3ada1ba7:1af75e9d:49379332:c99419f0:2082e36f:446c89d5:f345fc82:384898b7:4731611c:5684c891",
+            "t1": "3c034aff15de60f7ed1f72226ec8d2cb421102a071f77e2bb9975a4636b33977",
+            "t4": "18207457141716432007",
+            "t3": "Sz6OnySW2qGDjAFi0078UKgIdboliPvK"
+        },
+        "name": "dibledors",
+        "live": "Invalid",
+        "xbl": "Invalid",
+        "manual": false,
+        "license": "license:6853c18c67446c86291f1ba0e6d99ed85718e0ff"
+    },
+    "4": {
+        "tokens": [
+            "3:30437dc13769544335d1e8a98e37bfaa069c11da362b51c4d02356fe9c22a596",
+            "4:8c299e5713a53cc9f38fffcf44652661a3adc933ac9265fec95c7191c1fcfd00",
+            "4:63e9013520dfde57b42cfeccbe7af9becb7fd9d4ad519a8836bc2f2b3c5abec0",
+            "4:3b09e8816c8924f39fd5192b6dee27690768ec55c9b022376e96aeba322714e1"
+        ],
+        "discord": "334637362401378305",
+        "ip": "84.15.223.241",
+        "reason": "Freecam Detected, flags: 3",
+        "steam": "Invalid",
+        "fg_ts": {
+            "t2": "bf2bbd5c:e9b0dede:b836d680:eb899620:2ffc4bab:8158b6f3",
+            "t1": "d29a946857676ad24d88895de1b81246cbc44db7108ef46016c8da76b68eb31c",
+            "t4": "12287284471988449500",
+            "t3": "e8kyaHSREYxFvaC5P1Eh8e2CmsckVMka"
+        },
+        "name": "Reinis",
+        "live": "live:844428618634243",
+        "xbl": "xbl:2535450245211943",
+        "manual": false,
+        "license": "license:a3fa43d7464bcb361a1c2c470355ec25c1b9d274"
+    },
+    "3": {
+        "tokens": [
+            "2:1c1bfbefb7092a82fd20088a4c53cbb6c6d558b1fa0138c160367ca6f0061225",
+            "3:eed181a291ba3fdaa70e8b56a1852e56524f676035ab295c2c86a9d85e9810b1",
+            "4:ce99865b47e1931f0f7ab730750a39e33ed35dee7a53bd06df16faf432c51e2d",
+            "4:daccd7b9b1fd8ea6c7abc9ceef3fced1dcf058a8fccebf9e049a1f6c70f3019b",
+            "4:2eee8c47580b776efa10f868d0807292b71e990c860e220d8b6cc19d38c383be"
+        ],
+        "discord": "572849521843765249",
+        "ip": "91.105.25.203",
+        "reason": "Detected Vehicle Fix/GodMode",
+        "steam": "Invalid",
+        "fg_ts": {
+            "t2": "cc10de1d:132dd0dc:532ecd7d:9fdfc202:eb899620",
+            "t1": "de46659bbd2457fecb24879b4c22772056ed83df8b0a34fbc64efb228fb1e6c7",
+            "t4": "10814772421462763969",
+            "t3": "kG2pakBZRuHXFMp6F8L6XFjdHiD4ytxY"
+        },
+        "name": "veizpal",
+        "live": "live:914798363956356",
+        "xbl": "xbl:2535466308108384",
+        "manual": false,
+        "license": "license:944f17554c5db3ac91cc6433ec3a94c40e800a6d"
+    }
+}

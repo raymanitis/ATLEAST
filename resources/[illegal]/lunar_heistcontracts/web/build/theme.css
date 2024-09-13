@@ -1,0 +1,35 @@
+/** 
+    Here's the extracted colors, most of them are the same shade but just different opacities.
+    I recommend using this changing this only if you have a good color pallete prepared, also make sure to keep the opacities.
+**/
+
+/**
+    Here's a ChatGPT prompt you can use to generate a consistent color palette:
+
+    ```
+    Please come up with a clean color pallete by using the pallete I provide to you. 
+    The color perceived lightness and opacities should remain exactly the same. 
+    I want the new palette to be in YOUR_COLOR_HERE color. Output the result as a code block.
+    ```
+
+    Don't forget to provide the CSS below at the end of the prompt.
+**/
+
+:root {
+    --background-color: #262638;
+    --background-color2: #26263866;
+    --background-color3: #17171F;
+    --background-color4: #242432;
+    --background-color5: #6666a366;
+    --background-color6: #6666a333;
+    --primary-color: #a0a0ffc0;
+    --primary-color2: #bdbdff;
+    --primary-muted-color: #7b7bc266;
+    --outline-color: #3d3d61;
+    --background-gradient: linear-gradient(90deg, #53537A 0%, #3E3E71 100%);
+    --background-gradient2: radial-gradient(80.87% 394.5% at 50% 50%, rgba(26, 26, 36, 0.8) 0%, rgba(40, 40, 54, 0.8) 100%);
+    --normal-button-gradient: linear-gradient(0deg, rgba(103, 103, 103, 0.05), rgba(103, 103, 103, 0.05)), 
+        radial-gradient(186.32% 174.14% at 51.87% 145.68%, rgba(160, 160, 255, 0.3) 11.9%, rgba(60, 60, 88, 0.048) 79.5%);
+    --hover-button-gradient: linear-gradient(0deg, rgba(103, 103, 103, 0.05), rgba(103, 103, 103, 0.05)), 
+    radial-gradient(186.32% 174.14% at 51.87% 145.68%, rgba(160, 160, 255, 0.5) 11.9%, rgba(60, 60, 88, 0.12) 79.5%);
+}

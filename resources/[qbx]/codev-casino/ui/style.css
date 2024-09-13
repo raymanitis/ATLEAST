@@ -1,0 +1,1747 @@
+* {
+    user-select: none;
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("fonts/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Joyride;
+    src: url("fonts/Joyride.ttf");
+}
+
+@font-face {
+    font-family: Portico;
+    src: url("fonts/Portico.otf") format("opentype");
+}
+
+.menus {
+    display: none;
+}
+
+.ui {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    margin-top: 5.75%;
+    border-radius: 29px;
+    background: radial-gradient(69.51% 219.67% at 52.58% 56.9%, #0A0B0D 0%, #12151D 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.header {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+    height: 10%;
+    border-radius: 29px 29px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.006);
+}
+
+/* select all header-right childs */
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right>* {
+    margin-left: 50px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 800;
+    color: #83868D;
+    opacity: 0.73;
+}
+
+.sidebar {
+    padding-top: 1%;
+    width: 7%;
+    height: 88.2%;
+    background: rgba(255, 255, 255, 0.030);
+    color: #666673;
+    /* position: relative; */
+    border-bottom-left-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar .selected {
+    filter: brightness(1.8);
+}
+
+.sidebar ul li {
+    margin-bottom: 50%;
+}
+
+.sidebar ul li:hover,
+.sub-banner-button:hover,
+.h-sidebar:hover,
+.chat:hover,
+.avatarmenu-submit:hover,
+.menu-submit:hover,
+.menu-option:hover,
+#update-pfp:hover,
+#send-message:hover,
+.casino-item:hover,
+.category,
+.upcoming-match-details .pulsating-circle:hover,
+#playCoupon:hover,
+.icons-and-buttons img:hover,
+.closebutton:hover,
+#update-pfp:hover,
+.spinner-button:hover,
+.place-bet-button:hover,
+.plinko-button:hover,
+#update-name:hover,
+.dice-bet-button:hover,
+.ctake-button:hover,
+#plus-sign:hover {
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    position: relative;
+}
+
+.content-items {
+    width: 93.055%;
+    height: 90%;
+    margin-top: -72.2vh;
+    margin-left: 7%;
+}
+
+.banner {
+    height: 46%;
+    background: url('imgs/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sub-banners {
+    width: 96%;
+    height: 52%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.sub-banner {
+    width: 40%;
+    height: 32vh;
+}
+
+.sub-banner-image {
+    width: 100%;
+    height: 80%;
+    background-color: #666673;
+    border-radius: 15px;
+}
+
+.sub-banner-button {
+    width: 100%;
+    height: 13%;
+    background-color: #666673;
+    border-radius: 4px;
+    margin-top: 2%;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 250%;
+}
+
+.sub-banner-image-title {
+    font-family: 'Joyride', sans-serif;
+    font-size: 2.5rem;
+    padding-top: 16%;
+    padding-left: 4.5%;
+}
+
+#sub-banner-text-1 {
+    background: radial-gradient(100% 2695.43% at 50% 50%, rgba(86, 30, 255, 0.63) 0%, rgba(88, 30, 255, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 2px #581EFF;
+}
+
+#sub-banner-text-2 {
+    background: radial-gradient(330% 2695.43% at 50% 50%, rgba(255, 30, 70, 0.54) 0%, rgba(255, 30, 70, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 2px #ff1e4785;
+}
+
+.sub-banner-image-desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    width: 50%;
+    padding-left: 4.5%;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+#casino-image {
+    background: url('imgs/casino.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#casino-button {
+    background: radial-gradient(211.21% 1460.32% at 50% 50%, #581EFF 0%, rgba(88, 30, 255, 0.49) 99.48%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: inset 0px 0px 45.5697px #581EFF;
+}
+
+#sports-image {
+    background: url('imgs/sports.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sports-button {
+    background: radial-gradient(211.21% 1460.32% at 50% 50%, #FF1E46 0%, rgba(255, 30, 70, 0.49) 99.48%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    box-shadow: inset 0px 0px 45.5697px #FF1E46;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('imgs/avatarplaceholder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    border: 2px solid #353942;
+}
+
+.coin {
+    width: 14vh;
+    height: 3.5vh;
+    background: #1E2026;
+    border: 2px solid #353942;
+    border-radius: 25.7731px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coin .balance {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: .8rem;
+    padding-left: 15%;
+    text-align: right;
+}
+
+#goldcoin {
+    margin-left: 18%;
+}
+
+#plus-sign {
+    padding-left: 18%;
+}
+
+.avatarmenu {
+    display: none;
+    position: absolute;
+    width: 18%;
+    height: 48vh;
+    background: #0C0D10;
+    border-radius: 1.55159px 0px 7.75794px 7.75794px;
+    z-index: 1;
+    top: 19.5%;
+    right: 13%;
+    opacity: 1;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.menu-header {
+    font-family: 'Poppins', sans-serif;
+    color: #787D88;
+    font-weight: 600;
+    font-size: .8vw;
+    margin-left: 5%;
+    width: 25%;
+}
+
+.line {
+    width: 65%;
+    height: .2vh;
+    background: #1C1E24;
+    z-index: 199;
+}
+
+.pfp-image {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    background: url('https://wallpapers.com/images/hd/shadow-boy-white-eyes-unique-cool-pfp-nft-13yuypusuweug9xn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10% auto;
+}
+
+.avatar-loading {
+    z-index: 9999;
+    position: absolute;
+    margin-left: 40.5%;
+    padding-top: 22%;
+}
+
+.menu-input {
+    width: 90%;
+    height: 5vh;
+    background: #131418;
+    border-radius: 4.65476px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+.menu input {
+    width: 75%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .6vw;
+}
+
+.input-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.53);
+    font-size: .6vw;
+    margin-left: 7%;
+}
+
+.menu input::placeholder {
+    color: #63656D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .6vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+.menu-submit {
+    width: 50%;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background: #1CA7E2;
+    font-size: .7vw;
+    margin-top: 10%;
+    border-radius: 4.65476px;
+}
+
+.chatmenu {
+    display: none;
+    position: absolute;
+    width: 19%;
+    height: 48vh;
+    background: #0C0D10;
+    border-radius: 1.55159px 0px 7.75794px 7.75794px;
+    z-index: 1;
+    top: 19.5%;
+    right: 12%;
+}
+
+.chat-list {
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 5%;
+}
+
+.chat-message {
+    width: 90%;
+    height: auto;
+    border-radius: 4.65476px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5%;
+}
+
+.msg-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.chat-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: url('https://wallpapers.com/images/hd/shadow-boy-white-eyes-unique-cool-pfp-nft-13yuypusuweug9xn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chat-sender {
+    color: rgba(255, 255, 255, 0.67);
+    font-size: .7vw;
+    margin-left: 3%;
+    font-weight: 600;
+
+}
+
+.chat-time {
+    font-size: .4vw;
+    margin-left: 3%;
+    padding: 1.5%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.29);
+    background: rgba(217, 217, 217, 0.08);
+    border-radius: 3px;
+}
+
+.chat-text {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: .75rem;
+    padding: 3.5%;
+    margin-top: -1%;
+    margin-left: 22%;
+}
+
+.walletmenu {
+    display: none;
+    position: absolute;
+    width: 55%;
+    height: 57.5vh;
+    background: #0C0D10;
+    border-radius: 1.55159px 0px 7.75794px 7.75794px;
+    z-index: 1;
+    top: 22%;
+    margin: 0 auto;
+    left: 25%;
+}
+
+.walletmenu .title {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-weight: 400;
+    color: #858585;
+    margin-left: 3%;
+    font-size: 1.7rem;
+}
+
+.walletcoin {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #202020;
+    border-radius: 6px;
+    width: 15%;
+    height: 6%;
+    left: 77%;
+    top: 12%;
+    font-size: .75rem;
+    position: absolute;
+    color: #fff;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+}
+
+.closebutton {
+    position: relative;
+    left: 94%;
+    top: 3%;
+    font-size: 1.5rem;
+    color: #858585;
+}
+
+.walletmenu .desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #414141;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 31.5%;
+    font-size: .8rem;
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.left-side {
+    width: 45%;
+    height: 35vh;
+}
+
+.right-side {
+    width: 45%;
+    height: 35vh;
+}
+
+.payment-title {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.payment-title-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.payment-rectangle {
+    margin-top: 5%;
+    background: rgba(217, 217, 217, 0.02);
+    border: 1px solid #202020;
+    border-radius: 7px;
+    width: 100%;
+    height: 21vh;
+}
+
+.dollar-label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.3125px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #1CE28F;
+}
+
+.menu-select {
+    width: 90%;
+    height: 6vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu-option {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.menu-option-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-left: 2%;
+    color: #7e7c7c4d;
+}
+
+.option-selected {
+    color: #7E7C7C;
+}
+
+.option-selected2 {
+    color: #7E7C7C;
+}
+
+.context-menu-list {
+    background: #1C1E24;
+    border: none;
+}
+
+.context-menu-item {
+    background: #1E2026;
+}
+
+.context-menu-icon.context-menu-icon--fa::before {
+    color: #fff;
+}
+.context-menu-item span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.context-menu-item:hover {
+    background: #2b303f;
+}
+
+.context-menu-item::before {
+    color: #fff;
+}
+
+#homepage {
+    display: block;
+}
+
+#casino {
+    display: none;
+    background: url('imgs/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sports {
+    display: none;
+    background: url('imgs/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    margin: 1% auto;
+    height: 15vh;
+}
+
+.category {
+    width: 41%;
+    height: 12vh;
+    border: 2px solid #FF1E46;
+    background: url('imgs/categorybg.png');
+    border-radius: 3.18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    text-align: center;
+    opacity: .4;
+    border-image-source: linear-gradient(to bottom, #42040f, #ad1b36);
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+[data-category="bets"] {
+    border-image-source: linear-gradient(to bottom, #a5840b, #E2B61C);
+
+}
+
+.category-selected {
+    opacity: 1;
+}
+
+.category-title {
+    margin-top: 5.4%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.category-desc {
+    font-size: .65rem;
+    width: 45%;
+    color: rgba(255, 255, 255, 0.84);
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.live-matches {
+    width: 88%;
+    margin: 0 auto;
+    height: 25vh;
+    color: #7e7e7e;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+}
+
+.current-matches {
+    width: 100%;
+    height: 19vh;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    /* list content in 2 row every column */
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-between;
+}
+
+.live-match {
+    width: 48%;
+    height: 8vh;
+    border: 2px solid;
+    background: #ffffff13;
+    border-radius: 3.18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    text-align: center;
+    display: flex;
+    margin-bottom: 1%;
+    opacity: .8;
+    align-items: center;
+    justify-content: space-around;
+    border-image-source: linear-gradient(to bottom, #42040f, #ad1b36);
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
+.team-score-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 6.1vh;
+    margin-top: 5.1%;
+}
+
+.team-name {
+    text-align: center;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 31%;
+    font-size: 1.2rem;
+}
+
+.team-score {
+    font-size: 1.2rem;
+}
+
+.match-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 7vh;
+    font-size: .7rem;
+}
+
+.match-league {
+    margin-top: 3%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80px;
+}
+
+.match-timer {
+    color: #7e7e7e;
+    margin-top: 1%;
+}
+
+.match-details .pulsating-circle {
+    animation: pulsate 3s ease-out infinite;
+}
+
+.pulsating-circle {
+    width: 45%;
+    height: 70%;
+    border-radius: 50%;
+    background: rgba(255, 30, 70, 0.3);
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.second-circle {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    background: rgba(255, 30, 70, 0.4);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-circle {
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    background: rgba(255, 30, 70, 0.8);
+    opacity: 1;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+/* pulse animation */
+@keyframes pulsate {
+    0% {
+        transform: scale(1.0, 1.0);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1.0, 1.0);
+    }
+}
+
+.upcoming-matches {
+    width: 88%;
+    margin: 0 auto;
+    height: 28vh;
+    color: #7e7e7e;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+}
+
+.current-upcoming-matches {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+    /* list content in 2 row every column */
+    margin-top: 1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.upcoming-match {
+    width: 48%;
+    height: 9vh;
+    background: #ffffff1c;
+    border-radius: 3.18px;
+    background: rgba(217, 217, 217, 0.05);
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    text-align: center;
+    display: flex;
+    opacity: .8;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1%;
+}
+
+.upcoming-teams {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.upcoming-team-name {
+    width: 60%;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.upcoming-match-details {
+    width: 65%;
+    height: 6.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-odds {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.upcoming-match-details .pulsating-circle {
+    width: 23%;
+    height: 100%;
+    background: rgba(197, 197, 197, 0.1);
+}
+
+.upcoming-match-details .second-circle {
+    background: rgba(197, 197, 197, 0.1);
+}
+
+.upcoming-match-details .third-circle {
+    background: rgba(197, 197, 197, 0.81);
+    color: #2F3137;
+}
+
+.odds-top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: .7rem;
+}
+
+.upcoming-item {
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    margin-right: 4%;
+}
+
+.coupon-to-hide {
+    display: none;
+}
+
+.upcoming-item img {
+    margin-right: 5%;
+}
+#league-text {
+    width: 80px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.upcoming-child-item {
+    padding-left: 1%;
+
+}
+
+.upcoming-odds .line {
+    background: linear-gradient(270deg, #272729 0.9%, rgba(88, 89, 90, 0) 100.51%);
+}
+
+.upcoming-odds-all {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.upcoming-odds-all .odds {
+    margin-right: 3%;
+    margin-top: 3%;
+    background: rgba(217, 217, 217, 0.03);
+    border: 0.4px solid #27272A;
+}
+
+
+.couponmenu {
+    display: none;
+    position: absolute;
+    width: 23.5%;
+    height: 67.8vh;
+    background: #0C0D10;
+    border-radius: 1.55159px 0px 7.75794px 7.75794px;
+    z-index: 1;
+    top: 23%;
+    margin: 0 auto;
+    right: 12%;
+    overflow: hidden;
+}
+
+.coupons {
+    width: 100%;
+    height: 67%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    overflow: scroll;
+}
+
+.coupon {
+    width: 90%;
+    height: 12vh;
+    background: rgba(217, 217, 217, 0.05);
+    border: 0.773138px solid #515660;
+    border-radius: 1.54628px;
+    min-height: 12vh;
+}
+
+.coupon:not(:last-child) {
+    margin-bottom: 3%;
+}
+
+.coupon-details {
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    color: rgba(255, 255, 255, 0.56);
+    width: 90%;
+    padding-top: 5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75vw;
+}
+
+.coupon-odds {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    color: rgba(255, 255, 255, 0.56);
+    font-size: .75vw;
+}
+
+.coupon-odds select {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 75%;
+    text-align: center;
+    font-size: .75vw;
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 3.5985px;
+    border: none;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    color: rgba(255, 255, 255, 0.56);
+    outline: none;
+}
+
+.coupon-time {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 2%;
+    font-size: .55vw;
+    background: rgba(186, 186, 186, 0.27);
+    border-radius: 3.5985px;
+}
+
+.coupon-odds option {
+    color: white;
+    background-color: #0C0D10;
+    color: rgba(255, 255, 255, 0.56);
+    border-radius: 0;
+    background-color: #0C0D10;
+}
+
+.coupon-odds option:hover {
+    background-color: #0C0D10;
+    outline: none;
+    border: none;
+}
+
+.coupon-prices {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: -1.5%;
+}
+
+.coupon-price-container {
+    width: 35%;
+    height: 4.5vh;
+    border: 1.1995px solid rgba(255, 255, 255, 0.29);
+    border-radius: 2.399px;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-family: 'Poppins', sans-serif;
+    color: #BDBDBD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#totalPrice {
+    outline: none;
+    border: none;
+    width: 80%;
+    color: #BDBDBD;
+
+    margin: -7% auto;
+    background: transparent;
+    font-size: .8vw;
+    font-weight: 600;
+}
+
+.coupon-price-title {
+    width: 80%;
+    margin: 4% auto;
+    font-size: .6vw;
+    font-weight: 500;
+}
+
+.coupon-price {
+    width: 80%;
+    margin: -7% auto;
+    font-size: .8vw;
+    font-weight: 600;
+    outline: none;
+}
+
+.max-win {
+    width: 90%;
+    padding-top: 2%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: .7vw;
+}
+
+.max-win-price {
+    color: #00ff2a;
+}
+
+.icons-and-buttons {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-coupon {
+    width: 45%;
+    padding: 1%;
+    background: #1CA7E2;
+    border-radius: 2.1741px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.coupon-bottom {
+    width: 30%;
+    padding-top: 3%;
+    margin: 0 auto;
+}
+
+.bets {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.bets-title {
+    width: 88%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #CBBA86;
+    font-weight: 600;
+    font-size: .85vw;
+    background: rgba(234, 193, 72, 0.33);
+    border-radius: 2px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bets-title-div {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    padding-left: 2%; padding-right: 2%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.bets-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-bets {
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.bets-table {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.bets-table-head {
+    width: 100%;
+    height: 3.5vh;
+    display: flex;
+    align-items: center;
+    background: rgba(217, 217, 217, 0.16);
+    justify-content: space-between;
+}
+
+.bets-head-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #B1B3B9;
+    width: 17%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-right: 1px solid #4B4C50;
+}
+
+.bets-head-item:not(:first-child) {
+    text-align: center;
+}
+
+.bets-table-body {
+    margin-top: 1%;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bets-body-item {
+    width: 100%;
+    margin: 0 auto;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(217, 217, 217, 0.05);
+    border: 1px solid #5156609c;
+    border-radius: 2px;
+}
+
+.bets-table-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 17%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-right: 1px solid #4B4C50;
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.bets-table-item:not(:first-child) {
+    text-align: center;
+}
+
+[data-table-item="status"] {
+    text-align: center;
+    border-right: unset;
+}
+
+.bets-bottom {
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.56);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .75vw;
+}
+
+.bets-bottom-class {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bets-bottom-item.first {
+    border: none !important;
+}
+
+.bets-bottom-item {
+    padding: 5%;
+    width: 38%;
+    text-align: center;
+    background: rgba(217, 217, 217, 0.07);
+    border: 1px solid #323232;
+    border-radius: 2px;
+}
+
+.bets-table .play-coupon {
+    margin-top: 2%;
+    float: right;
+    height: 1.5vh;
+    line-height: 100%;
+    width: 20% !important;
+    color: rgba(0, 0, 0, 0.57);
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bets::-webkit-scrollbar {
+    display: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* casino */
+.casino-title {
+    width: 96%;
+    padding-top: 3%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #939393;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.casino-title img {
+    padding-right: 1.5%;
+}
+
+.casino-items {
+    width: 96%;
+    margin: 2% auto;
+    height: 49.8vh;
+    display: flex;
+    align-items: center;
+}
+
+.casino-item {
+    width: 25%;
+    background: url('imgs/slot.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-right: 1%;
+    border-radius: 4px;
+}
+
+.veniator {
+    background: url('imgs/veniator.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.plinko {
+    background: url('imgs/plinko.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dice {
+    background: url('imgs/dice.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.casino-item-title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Joyride', sans-serif;
+    color: #1740f4;
+    font-weight: 800;
+    font-size: 2.3vw;
+    z-index: 11;
+    position: relative;
+    top: 80%;
+}
+
+.casino-item-desc {
+    font-family: 'Joyride', sans-serif;
+    color: #6B6B6B;
+    text-align: center;
+    top: 80%;
+    font-size: .6vw;
+    position: relative;
+}
+
+/* veniator */
+
+.content-games {
+    width: 93.055%;
+    height: 90%;
+    margin-top: -72.2vh;
+    margin-left: 7%;
+    display: flex;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#veniator {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+.veniator-my-bets {
+    width: 25%;
+    height: 70vh;
+    background-color: #1b1c1d;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+}
+
+.veniator-my-bets-title {
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3%;
+    background-color: #2c2d30;
+}
+
+.bet-buttons {
+    width: 100%;
+    height: 21.50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5%;
+}
+
+.bet-button {
+    background-color: #1b1c1d;
+    width: 48%;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bet-amount{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-bet {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 32%;
+    padding: 1%;
+}
+
+.plus-button {
+    width: 48%;
+    height: 50%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7vw;
+    text-align: center;
+    background: #141516;
+    border-radius: 10px;
+}
+
+.spinner {
+    width: 100%;
+    height: 30%;
+    background-color: #0A0B0D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.spinner-button-up {
+    width: 25%;
+    height: 40%;
+    background-image: url('imgs/plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+.spinner-button-down {
+    width: 25%;
+    height: 40%;
+    background-image: url('imgs/minus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+
+#bet-amount-first, #bet-amount-second {
+    width: 50%;
+    /* border-radius: ; */
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.ctake-bet-button {
+    cursor: pointer;
+} 
+
+.ctake-bet-button.disabled {
+    cursor: not-allowed !important;
+    background-color: #aaa;
+    transition: .5s;
+}
+.place-bet-button {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #b2f2a3;
+    background-color: #28a909;
+    box-shadow: inset 0 1px 1px #ffffff80;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    border-radius: 10px;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.game-side {
+    width: 70%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.history-box {
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow-y: scroll;
+    margin-bottom: 1%;
+}
+
+.history-item {
+    background-color: #056aa0;
+    margin-left: .3%;
+    margin-right: .3%;
+    padding: .2% 1% .2% 1%;
+    border-radius: 8px;
+    font-size: .6vw;
+}
+
+.m10x {
+    background-color: #a31199;
+}
+
+.m2x {
+    background-color: #5618b3;
+}
+
+.f10x {
+    color: #a31199;
+}
+
+.f2x {
+    color: #9900ff;
+}
+
+.veniator-screen {
+    width: 100%;
+    height: 50vh;
+}
+
+.veniator-my-bets-table {
+    width: 92%;
+    height: 96%;
+    margin: 0 auto;
+    text-align: center;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.veniator-my-bets-table .table-header {
+    width: 95%;
+    font-weight: 400;
+    color: #7b7b7b;
+    font-size: .6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.table-body {
+    width: 100%;
+}
+
+.veniator-my-bets-table .table-body-item {
+    width: 95%;
+    margin: 1% auto;
+    padding: 1.5% 2% 1.5% 2%;
+    background-color: #123405;
+    border: solid 1px #101112;
+    border-radius: 10px;
+    border-color: #427f00;
+    font-size: .7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.body-item-time {
+    color: #9b9797;
+}
+
+.body-item-multiply {
+    background-color: #00000080;
+    padding: .5% 2% .5% 2%;
+    font-size: .6vw;
+    border-radius: 10px;
+}
+
+.notification {
+    position: absolute;
+    width: 26vh;
+    height: 4vh;
+    background-color: #353942;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 12%;
+    left: 12%;
+    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 100%;
+    z-index: 9999;
+
+    display: none;
+} 
+
+.notification-title {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.notification-desc {
+    width: 100%;
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.search-bar {
+    height: 3vh;
+    padding: 0%;
+    margin-left: 1%;
+    padding-top: 1%;
+} 
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1e24;
+    border: none;
+    border-radius: 10px;
+    padding-left: 1%;
+    padding-right: 0%;
+    margin-left: -1%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+    outline: none;
+}

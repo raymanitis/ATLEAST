@@ -1,0 +1,21 @@
+{
+    "spawn": "Ielogoties",
+    "delete": "Izdzēst",
+    "confirm_delete": "Vai esi pārliecināts ka vēlies izdzēst šo tēlu?",
+    "cancel": "Atcelt",
+    "delete_char": "Izdzēst",
+    "create_first": "Izveidot pirmo tēlu",
+    "char_reg": "Tēla izveide",
+    "firstname": "Vārds",
+    "firstname_placeholder": "Valters",
+    "lastname": "Uzvārds",
+    "lastname_placeholder": "Ozollapa",
+    "birthdate": "Dzimšanas datums",
+    "gender": "Dzimums",
+    "gender_placeholder": "Izvēleties tēlu",
+    "nationality": "Nacionalitāte",
+    "nationality_placeholder": "Izvēlēties nacionalitāti",
+    "create_char": "Izveidot tēlu",
+    "male": "Vīrietis",
+    "female": "Sieviete"
+}

@@ -1,0 +1,12 @@
+{
+    "locked": "Radar trancado",
+    "unlocked": "Radar destrancado",
+    "enabled": "Radar ligado",
+    "disabled": "Radar desligado",
+    "front": "Dianteira",
+    "rear": "Traseira",
+    "plate": "Matricula",
+    "speed": "Velocidade",
+    "lockRadarKeybind": "Trancar/Destrancar radar (SAPD)",
+    "toggleRadarKeybind": "Ligar/Desligar radar (SAPD)"
+}

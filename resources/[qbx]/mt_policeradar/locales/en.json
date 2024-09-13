@@ -1,0 +1,12 @@
+{
+    "locked": "Radars blokets",
+    "unlocked": "Radars atblokets",
+    "enabled": "Radars aktivizets",
+    "disabled": "Radars deaktivizets",
+    "front": "Priekpuse",
+    "rear": "Aizmugure",
+    "plate": "Numurzime",
+    "speed": "Atrums",
+    "lockRadarKeybind": "Bloket/Atbloket radaru",
+    "toggleRadarKeybind": "Ieslegt/Izslegt radaru"
+}

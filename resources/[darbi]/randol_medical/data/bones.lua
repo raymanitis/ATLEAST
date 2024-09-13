@@ -1,0 +1,23 @@
+return { -- Shouldn't need to touch these.
+    [0] = { id = 'bruising', label = 'Unknown Bruising', }, -- Sometimes it just doesn't detect a damaged bone so for RP sake, we'll utilize 0 as bruising.
+    [10706] = { id = 'rclavicle', label = 'Right Clavicle' },
+    [64729] = { id = 'lclavicle', label = 'Left Clavicle' },
+    [14201] = { id = 'lfoot', label = 'Left Foot' },
+    [18905] = { id = 'lhand', label = 'Left Hand' },
+    [24816] = { id = 'lbdy', label = 'Lower chest' },
+    [24817] = { id = 'ubdy', label = 'Upper Chest' },
+    [24818] = { id = 'shoulder', label = 'Shoulder' },
+    [28252] = { id = 'rforearm', label = 'Right Forearm' },
+    [36864] = { id = 'rleg', label = 'Right leg' },
+    [39317] = { id = 'neck', label = 'Neck' },
+    [40269] = { id = 'ruparm', label = 'Right Upper Arm' },
+    [45509] = { id = 'luparm', label = 'Left Upper Arm' },
+    [51826] = { id = 'rthigh', label = 'Right Thigh' },
+    [52301] = { id = 'rfoot', label = 'Right Foot' },
+    [57005] = { id = 'rhand', label = 'Right Hand' },
+    [57597] = { id = '5lumbar', label = '5th Lumbar vertabra' },
+    [58271] = { id = 'lthigh', label = 'Left Thigh' },
+    [61163] = { id = 'lforearm', label = 'Left forearm' },
+    [63931] = { id = 'lleg', label = 'Left Leg' },
+    [31086] = { id = 'head', label = 'Head' },
+}

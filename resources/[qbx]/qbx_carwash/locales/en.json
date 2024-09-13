@@ -1,0 +1,11 @@
+{
+    "wash_prompt": "Nomazgajiet automasinu par $%s",
+    "wash_prompt_dt": "~g~E~w~ - Nomazgajiet automasinu par $%s",
+    "washing": "Transportlīdzeklis tiek mazgāts...",
+    "canceled": "Atcelts...",
+    "not_dirty": "Transportlīdzeklis nav netīrs",
+    "not_available": "Automašīnu mazgāšana nav pieejama...",
+    "no_money": "Jums nav pietiekami daudz naudas...",
+    "reason": "Automašīna nomazgāta",
+    "label": "Automasinu mazgatava"
+}

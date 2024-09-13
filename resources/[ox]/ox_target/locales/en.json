@@ -1,0 +1,17 @@
+{
+  "toggle_front_driver_door": "Atvert/aizvert prieksejas vaditaja durvis",
+  "toggle_front_passenger_door": "Atvert/aizvert prieksejas pasaziera durvis",
+  "toggle_rear_driver_door": "Atvert/aizvert aizmugurejas vaditaja durvis",
+  "toggle_rear_passenger_door": "Atvert/aizvert aizmugurejas pasaziera durvis",
+  "toggle_hood": "Atvert/aizvert motora parsegu",
+  "toggle_trunk": "Atvert/aizvert bagaznieku",
+  "debug_box": "(Teste�ana) Kaste",
+  "debug_sphere": "(Teste�ana) Sfera",
+  "debug_police_car": "Policijas ma�ina",
+  "debug_ped": "(Teste�ana) Gajejs",
+  "debug_vehicle": "(Teste�ana) Transportlidzeklis",
+  "debug_object": "(Teste�ana) Objekts",
+  "debug_global": "(Teste�ana) Globalais",
+  "toggle_targeting": "Ieslegt/izslegt merke�anu",
+  "go_back": "Atgriezties atpakal"
+}

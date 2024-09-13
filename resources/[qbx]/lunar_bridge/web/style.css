@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: #e3e6ec;
+  font-weight: bold;
+}
+
+body {
+  user-select: none;
+  white-space: nowrap;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* background: black; */
+  font-family: 'Inter', sans-serif;
+  /* background: url('https://media.discordapp.net/attachments/793081015433560075/1229132869801218223/image_37.png?ex=662e9230&is=661c1d30&hm=7b114523633412a8ed1e39a773821bf56d5edf9390fcb2e75fa0eaf24cad8288&=&format=webp&quality=lossless&width=1193&height=671'), url('https://cdn.discordapp.com/attachments/793081015433560075/1225471215829909504/image.png?ex=66214002&is=660ecb02&hm=d90a10b15c47391ef7a16a168835cd6888cee5b75d27d8a6c78651cfd15bcfd7&'); */
+  /* background: url('https://cdn.discordapp.com/attachments/793081015433560075/1225471215829909504/image.png?ex=66214002&is=660ecb02&hm=d90a10b15c47391ef7a16a168835cd6888cee5b75d27d8a6c78651cfd15bcfd7&'); */
+}
+
+#prompt {
+  margin-top: 335px;
+  margin-left: 335px;
+  position: absolute;
+  display: flex;
+  opacity: 1.0;
+  transition: opacity 0.1s;
+  overflow: visible;
+}
+
+.hidden {
+  opacity: 0.0 !important;
+  transition: all 0.2s;
+}
+
+#keybind {
+  background-color: rgba(60, 60, 88, 1.0);
+  outline: 2px solid rgb(109, 124, 163);
+  font-size: 24px;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#options {
+  transition: margin-top 0.4s;
+}
+
+i {
+  margin-right: 7px;
+  font-size: 16px;
+}
+
+.option {
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgb(60, 60, 88) 0%,
+    rgba(38, 38, 56, 0.9) 66%
+  );
+  color: #cfd2d7bb;
+  list-style-type: none;
+  font-size: 16px;
+  text-align: left;
+  padding: 8px 12px;
+  height: 35px;
+  margin: 0px 8px 4px 8px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.selected {
+  font-size: 18px;
+  padding: 10px 12px;
+  height: 40px;
+  transition: all 0.4s;
+  color: #cfd2da;
+}
+
+#objective {
+  position: absolute;
+  top: 45.0%;
+  left: 20px;
+  width: 250px;
+  border-radius: 10px;
+  opacity: 1.0;
+  transition: all linear 300ms;
+  font-family: 'Montserrat';
+}
+
+#objective .hidden {
+  opacity: 0.0;
+  transition: all linear 300ms;
+}
+
+#objective .title {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  background: linear-gradient(180deg, #cfcfff 0%, #b6b6ff 80%);
+  background-clip: text;
+  text-align: center;
+  width: fit-content;
+  max-width: 230px;
+  margin: 10px auto;
+  padding: 10px 16px;
+  box-shadow: 0px 5px 7px -7px #6565cda1; /* Adjusted to match the title's visibility */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 0px 10px #5b5baaa1) drop-shadow(0px 0px 5px #9e9effa1) drop-shadow(0px 0px 5px #1d1d2db9) ; /* Darker and more opaque */
+  border-bottom: solid 2px #A0A0FF;
+}
+
+#objective .content {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  white-space: break-spaces;
+  width: 250px;
+  padding: 10px 8px;
+  line-height: 28px;
+  color: #ffffff;
+  background: rgba(132, 132, 132, 0.4);
+  border: solid rgba(181, 181, 181, 0.35) 1px;
+  border-radius: 6px;
+}
+
+#bars {
+  position: absolute;
+  width: 250px;
+  margin: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar-container {
+  margin-bottom: 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(60, 60, 88) 0%,
+    rgba(38, 38, 56, 0.9) 66%
+  );
+  padding-top: 4px;
+}
+
+.bar-label {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 4px;
+  margin-left: 6px;
+}
+
+.bar-label span {
+  margin-left: 2px;
+  font-weight: 500;
+}
+
+.progress {
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 2px;
+  display: block;
+  transition: 200ms linear;
+}

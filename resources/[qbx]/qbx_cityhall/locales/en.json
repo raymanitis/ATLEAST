@@ -1,0 +1,20 @@
+{
+    "error": {
+        "not_enough_money": "Tev nav pietiekami daudz naudas...",
+        "invalid_type": "Nav derīgs ID tips..."
+    },
+    "success": {
+        "item_recieved": "Tu saņēmi savu  ",
+        "new_job": "Apsveicu ar jaunu darbu!"
+    },
+    "info": {
+        "cityhall": "Dome",
+        "open_cityhall": "[E] Atvērt domi",
+        "target_open_cityhall": "Atvērt domi",
+        "identity": "Identitāte",
+        "employment": "Employment",
+        "obtain_license_identity": "Iegūt licenzes",
+        "select_job": "Select a new job",
+        "price": "Cena: $%s"
+    }
+}

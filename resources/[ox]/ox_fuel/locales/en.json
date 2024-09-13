@@ -1,0 +1,20 @@
+{
+    "tank_full": "Degvielas baka ir pilna Sim transportam",
+    "petrolcan_cannot_afford": "Jums ir nepietiekami lidzeklu, lai atlautos degviel kanu",
+    "refuel_cannot_afford": "Jums ir nepietiekami lidzeklu lai uzpilditu masinu",
+    "vehicle_far": "Jusu transports ir parak talu",
+    "pump_fuel_with_can": "Noliekat savu degvielas kanu prom, lai varetu sakt uzpildisanos",
+    "fuel_help": "Uzspied ~INPUT_C2939D45~ lai uzpilditos",
+    "petrolcan_help": "Uzspied ~INPUT_C2939D45~ lai uzpildītos vai lai nopirktu jaunu degvielas kannu",
+    "leave_vehicle": "Pametat transportu lai varetu saktu degvielas uzpildi",
+    "start_fueling": "Sakt uzpildisanos",
+    "petrolcan_buy_or_refill": "Pirkt vai parpildit degvielas kanu",
+    "fuel_station_blip": "Degvielas uzpildes stacija",
+    "not_enough_money": "Nepietiekami lidzeklu! Pietrukst $%s",
+    "fuel_success": "Uzpildits lidz %s - $%s",
+    "petrolcan_refill": "Samaksats $%s par degvielas kanas parpildi",
+    "petrolcan_buy": "Samaksats $%s par degvielas kanu",
+    "petrolcan_cannot_carry": "Jus nevarat nest so degvielas kanu",
+    "petrolcan_not_enough_fuel": "Jusu degvielas kanai pietrukst degvielas",
+    "petrolcan_not_equipped": "Jums vajag panemt degvielas kanu rokas"
+}

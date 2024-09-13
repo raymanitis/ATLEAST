@@ -1,0 +1,80 @@
+#mines {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mines-bet-amount-input {
+    height: 80%;
+    width: 63%;
+    padding-left: 6%;
+    border: none;
+    background-color: #3b3b3b;
+    border-radius: .25rem;
+    color: #FFFFFF;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mines-game-screen {
+    width: 75%;
+    height: 71.7vh;
+    margin-left: -2%;
+    margin-top: .2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mining_field {
+    width: 80%;
+    height: 91%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#tiles {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ 
+
+#tiles li {
+    width: 17%;
+    height: 12vh;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+    background-color: #2f4553;
+    border-bottom: 5px solid #213743;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#tiles li:hover {
+    background-color: #557085;
+    transform: scale(1.04s);
+    transition: .3s;
+}
+
+
+#tiles li.good {
+    background-color: #26b53d;
+    border-bottom: 5px solid #0c4215;
+}
+
+#tiles li.bad {
+    background-color: #f54d4d;
+    border-bottom: 5px solid #6e1f1f;
+}

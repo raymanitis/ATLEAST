@@ -1,0 +1,111 @@
+return {
+    -- YOU CAN ADD/REMOVE. JUST MAKE SURE YOU FOLLOW THE FULL FORMAT WHEN ADDING. THESE ARE JUST PRESETS.
+    pillbox = { -- Default Pillbox (QBCORE)
+        label = 'Pillbox',
+        blip = {coords = vec3(306.97, -595.81, 43.29), sprite = 61, color = 3},
+        checkin = vec3(303.2801, -584.1765, 43.5848),
+        checkinPrice = 100,
+        minDoctors = 1, -- the amount of ems on duty that stops you from being able to use the checkin.
+        beds = { -- beds
+            { coords = vec4(319.8144, -585.6333, 44.1241, 337.5110)},
+            { coords = vec4(316.9438, -584.5401, 44.1241, 336.8671)},
+            { coords = vec4(322.7009, -586.7055, 44.1241, 336.1024)},
+            { coords = vec4(325.7168, -587.5930, 44.1241, 339.0898)},
+            { coords = vec4(328.5317, -588.8233, 44.1241, 338.2386)},
+            -- { coords = vec4(360.32, -587.19, 43.02, 160.0)},
+            -- { coords = vec4(349.82, -583.33, 43.02, 160.0)},
+            -- { coords = vec4(326.98, -576.17, 43.02, 160.0)},
+        },
+        stash = { slots = 50, weight = 2000000, coords = vec3(327.7723, -590.9688, 43.0067)}, -- QBCore Pillbox.
+        duty = vec3(315.0638, -582.3689, 43.0611), -- QBCore Pillbox Duty
+        armory = vec3(325.2624, -590.8790, 43.0172), -- QBCore Pillbox armory.
+        restock = vec3(310.68, -597.04, 43.07),
+    },
+    prison = { -- OLD unclejust prison mlo -- THE HOSPITAL NAME FOR PRISON MUST BE NAMED prison.
+        label = 'Prison Medical',
+        checkin = vec3(1782.68, 2555.71, 45.8),
+        checkinPrice = 0,
+        minDoctors = 0,
+        beds = {
+            {coords = vec4(1777.77, 2559.01, 45.72, 270.0)},
+            {coords = vec4(1777.71, 2561.42, 45.72, 270.0)},
+            {coords = vec4(1777.73, 2563.42, 45.72, 270.0)},
+            {coords = vec4(1777.64, 2565.51, 45.72, 270.0)},
+            {coords = vec4(1781.62, 2565.44, 45.72, 90.0)},
+            {coords = vec4(1781.65, 2563.44, 45.72, 90.0)},
+            {coords = vec4(1781.6, 2561.46, 45.72, 90.0)},
+        }
+    },
+    -- gabzpillbox = {
+    --     label = 'Pillbox',
+    --     blip = {coords = vec3(307.54, -587.36, 43.28), sprite = 61, color = 3},
+    --     checkin = vec3(307.61, -595.35, 43.28),
+    --     checkinPrice = 500,
+    --     minDoctors = 1,
+    --     beds = {
+    --         {coords = vec4(314.44, -584.43, 43.2, 340.08)},
+    --         {coords = vec4(317.75, -585.43, 43.2, 340.0)},
+    --         {coords = vec4(319.29, -580.88, 43.2, 160.0)},
+    --         {coords = vec4(324.31, -582.84, 43.2, 160.0)},
+    --         {coords = vec4(322.72, -587.29, 43.2, 340.0)},
+    --         {coords = vec4(313.93, -578.81, 43.2, 160.0)},
+    --         {coords = vec4(311.03, -583.3, 43.2, 340.0)},
+    --         {coords = vec4(307.8, -581.7, 43.2, 340.0)},
+    --         {coords = vec4(309.24, -577.49, 43.2, 160.0)},
+    --     },
+    --     stash = { slots = 50, weight = 2000000, coords = vec3(298.16, -598.07, 43.28)},
+    --     duty = vec3(310.23, -597.56, 43.29),
+    --     armory = vec3(306.52, -602.43, 43.28),
+    --     restock = vec3(310.68, -597.04, 43.07),
+    -- },
+    -- centralmedical = { -- G&N Central Medical
+    --     label = 'Central Medical',
+    --     blip = {coords = vec3(356.13, -1397.15, 32.24), sprite = 61, color = 3},
+    --     checkin = vec3(356.13, -1397.15, 32.24),
+    --     checkinPrice = 500,
+    --     minDoctors = 1,
+    --     beds = {
+    --         {coords = vec4(365.08, -1402.74, 32.5, 134.56)},
+    --         {coords = vec4(367.65, -1405.09, 32.5, 134.56)},
+    --         {coords = vec4(370.21, -1407.14, 32.5, 134.56)},
+    --         {coords = vec4(372.8, -1409.28, 32.5, 134.56)},
+    --         {coords = vec4(368.95, -1413.9, 32.5, 320.2)},
+    --         {coords = vec4(366.44, -1411.67, 32.5, 320.2)},
+    --         {coords = vec4(361.3, -1407.36, 32.5, 320.2)},
+    --     },
+    --     stash = { slots = 50, weight = 2000000, coords = vec3(351.65, -1409.99, 32.5)},
+    --     duty = vec3(352.85, -1415.14, 32.1),
+    --     armory = vec3(357.02, -1412.23, 32.5),
+    --     restock = vec3(359.08, -1399.53, 32.2),
+    -- },
+    -- paleto = { -- G&N Paleto Medical
+    --     label = 'Paleto Medical',
+    --     blip = {coords = vec3(-250.84, 6336.33, 32.45), sprite = 61, color = 3},
+    --     checkin = vec3(-250.84, 6336.33, 32.45),
+    --     checkinPrice = 5000,
+    --     minDoctors = 0,
+    --     beds = { 
+    --         {coords = vec4(-244.5, 6317.89, 32.45, 40.89)},
+    --         {coords = vec4(-248.14, 6314.46, 32.45, 40.89)},
+    --         {coords = vec4(-251.88, 6310.71, 32.45, 40.89)},
+    --     },
+    --     stash = { slots = 50, weight = 2000000, coords = vec3(-262.33, 6323.81, 32.45)},
+    --     duty = vec3(-257.93, 6323.60, 32.27),
+    --     armory = vec3(-253.7, 6322.22, 32.45), 
+    --     restock = vec3(-258.74, 6322.52, 32.45),
+    -- },
+    -- prison = { -- GABZ Prison -- THE HOSPITAL NAME FOR PRISON MUST BE NAMED prison.
+    --     label = 'Prison Medical',
+    --     checkin = vec3(1768.99, 2570.98, 45.80),
+    --     checkinPrice = 500,
+    --     minDoctors = 0,
+    --     beds = {
+    --         { coords = vec4(1761.87, 2591.56, 45.90, 269.65) },
+    --         { coords = vec4(1761.87, 2594.64, 45.90, 269.65) },
+    --         { coords = vec4(1761.87, 2597.72, 45.90, 269.65) },
+    --         { coords = vec4(1771.97, 2597.95, 45.90, 93.87) },
+    --         { coords = vec4(1771.97, 2594.87, 45.90, 93.87) },
+    --         { coords = vec4(1771.97, 2591.79, 45.90, 93.87) },
+    --     }
+    -- },
+}

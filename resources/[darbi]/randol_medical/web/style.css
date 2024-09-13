@@ -1,0 +1,147 @@
+@font-face { 
+    font-family: 'Akrobat ExtraBold'; 
+    src: url('web/Akrobat.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body { 
+    text-rendering: optimizeLegibility; 
+    overflow: hidden; 
+    user-select: none; 
+    -webkit-user-drag: none; 
+}
+
+.hidden { 
+    display: none; 
+}
+
+#red-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 10px; /* Increased by 10px */
+    background: linear-gradient(to top, rgba(124, 1, 1, 0.6), transparent 20%), linear-gradient(to bottom, rgba(124, 1, 1, 0.6), transparent 20%);
+    pointer-events: none;
+    z-index: 999;
+}
+
+#death-overlay {
+    position: fixed;
+    bottom: 11%; /* Increased by 10px */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Akrobat ExtraBold', sans-serif;
+    font-style: normal;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+  
+#death-overlay h1 {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 11px; /* Increased by 10px */
+}
+
+#death-overlay h2 { 
+    font-size: 30px; 
+    margin-bottom: 30px; /* Increased by 10px */
+}
+
+#death-overlay h3 { 
+    font-size: 16px; 
+    margin-top: 20px; /* Increased by 10px */
+}
+
+#death-overlay h4 { 
+    font-size: 18px; 
+    margin-top: 20px; /* Increased by 10px */
+}
+  
+#key, #key2 { 
+    font-size: 16px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 2px 6px; 
+    border-radius: 3px; 
+    border: 1px solid rgba(255, 255, 255, 0.637); 
+}
+
+#blood-splats { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 10px; /* Increased by 10px */
+    left: 0; 
+    pointer-events: none; 
+    overflow: hidden; 
+}
+
+#dim-overlay { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 10px; /* Increased by 10px */
+    left: 0; 
+    background-color: rgba(5, 5, 5, 0.815); 
+    opacity: 0; 
+    transition: opacity 1s; 
+    pointer-events: none; 
+}
+
+.blood-splat { 
+    position: absolute; 
+    background-image: url('https://r2.fivemanage.com/pub/hhxdbngk9uew.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 15vw; 
+    height: 15vw; 
+    opacity: 1; 
+    animation: splat-fade 3s forwards; 
+}
+
+@keyframes splat-fade { 
+    0% { opacity: 1; transform: scale(1); } 
+    100% { opacity: 0; transform: scale(0.5); } 
+}
+
+#bleeding-level-container { 
+    position: absolute; 
+    width: 20vh; 
+    right: 2px; 
+    top: calc(50% + 10px); /* Increased by 10px */
+    transform: translateY(-50%) rotate(-90deg); 
+    transform-origin: center; 
+    text-align: center; 
+    color: white; 
+    font-family: 'Akrobat ExtraBold'; 
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
+}
+
+#bleeding-level { 
+    width: 100%; 
+    height: 1.5em; 
+    -webkit-appearance: none; 
+    appearance: none; 
+    transform: scaleY(-1); 
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3); 
+}
+
+#bleeding-level::-webkit-progress-bar { 
+    background-color: #ffffff07; 
+    border-radius: 3px; 
+    padding: 1px; 
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+#bleeding-level::-webkit-progress-value { 
+    background: #8d0101; 
+    border-radius: 2px; 
+}

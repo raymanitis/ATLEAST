@@ -1,0 +1,11 @@
+{
+    "atm": "Bankomāta laupīšana",
+    "no_hacking_device": "Tev nav vajadzīgā lieta",
+    "atm_robbed": "Šo bankomātu jau kāds apzaga",
+    "robbing_atm": "Tu savāc naudu",
+    "failed_hacking": "Tu izgāzies bračiņ",
+    "no_cops": "Nav pietiekami policijas",
+    "target": "Apzagt bankomātu",
+
+    "test": "Test"
+}

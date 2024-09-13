@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Death Screen</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='https://fonts.cdnfonts.com/css/akrobat'>
+</head>
+<body>
+    <div id="red-overlay"class='hidden'></div>
+    <div id='death-overlay' class='hidden'>
+        <h1 id='countdown-timer'><span id='timer'></span></h1>
+        <h2>Tu esi ievainots</h2>
+        <h3>Spied <span id='key'>E</span> lai izsauktu mediķus vai spied<span id='key2'>R</span> lai pārceltos uz slimnīcu kad tas ir iespējams.</j3>
+        <h4 id='ems-status'>Mediķi tiešsaistē: <span id='ems-count'>0</span></h4>
+    </div>
+    <div id='bleeding-level-container' class='hidden'>
+        <label for='bleeding-level'></label>
+        <progress id='bleeding-level' value='0' max='100'></progress>
+    </div>    
+    <div id='blood-splats'></div>
+    <div id='dim-overlay' class='hidden'></div>
+
+    <script src='script.js'></script>
+</body>
+</html>

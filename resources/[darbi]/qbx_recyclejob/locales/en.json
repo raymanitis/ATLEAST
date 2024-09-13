@@ -1,0 +1,25 @@
+{
+    "success": {
+      "you_have_been_clocked_in": "Tu uzsāki maiņu"
+    },
+    "text": {
+      "point_enter_warehouse": "[E] - Iejiet noliktavā",
+      "enter_warehouse": "Iejiet noliktavā",
+      "exit_warehouse": "Iziet no noliktavas",
+      "point_exit_warehouse": "[E] - Exit Warehouse",
+      "clock_out": "Beigt maiņu",
+      "point_clock_out": "[E] - Clock Out",
+      "clock_in": "Uzsākt maiņu",
+      "point_clock_in": "[E] - Clock In",
+      "hand_in_package": "Nodot paciņu",
+      "point_hand_in_package": "[E] - Hand In Package",
+      "get_package": "Paņemt paciņu",
+      "point_get_package": "[E] - Get Package",
+      "picking_up_the_package": "Paceļ paciņu",
+      "unpacking_the_package": "Atpako paciņu"
+    },
+    "error": {
+      "you_have_clocked_out": "Tu beidzi maiņu"
+    }
+  }
+  

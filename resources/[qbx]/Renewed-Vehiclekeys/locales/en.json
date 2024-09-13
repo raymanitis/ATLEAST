@@ -1,0 +1,21 @@
+{
+    "search_vehicle": "Parmekle automasinu",
+    "engine_descrip": "Ieslegt/Izslegt dzineju",
+    "lock_descrip": "Atslegt/Aizslegt durvis",
+    "taking_keys": "Panem atslegas",
+    "stealing_keys": "Nozog atslegas",
+    "plate": "Numurzime",
+    "recieved_keys": "Tu sanemi atslegas!",
+    "not_strong_enough": "Nav pietiekams lockpick!",
+    "found_nothing": "Tu neko neatradi!",
+    "search": "[G] Pārmeklēt",
+    "hotwire": "[H] Savienot vadus",
+    "stopped": "stopped",
+    "started": "started",
+    "engine": "Motors %s",
+    "no_fuel": "Vehicle can't be operated!",
+    "vehicle": "Vehicle %s",
+    "unlocked": "atslegta",
+    "locked": "aizslegta",
+    "engine_damaged": "Vehicle isn't operateable!"
+}

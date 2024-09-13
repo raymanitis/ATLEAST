@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: none;
+            }
+            .centered-image {
+                height: 85%;
+                position: absolute;
+                margin-top: 2% !important;
+                margin-bottom: 2% !important;
+                border-radius: 5px;
+                border: 20px solid #1b1d21;
+            }
+            .container {
+                background-color: transparent !important;
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="" alt="" id="image" class="centered-image" onerror="this.src='https://i.ibb.co/S3wBwWH/MENU-IMAGE-NOT-ADDED.png'">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

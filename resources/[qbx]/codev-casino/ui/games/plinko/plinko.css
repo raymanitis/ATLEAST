@@ -1,0 +1,182 @@
+/* plinko */
+
+#plinko {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ctake-left {
+    width: 25%;
+    height: 71.7vh;
+    margin-top: .2%;
+    background-color: #1b1c1d;
+}
+
+.plinko-game-screen {
+    width: 70%;
+    height: 71.3vh;
+    margin-left: 1%;
+    margin-top: .2%;
+    background-color: #1b1c1d;
+}
+
+.ctake-label {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-weight: 600;
+    color: #818181;
+}
+
+.ctake-bet-amount {
+    width: 90%;
+    margin: 1% auto;
+    height: 5%;
+    background-color: #252525;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctake-button {
+    width: 13%;
+    text-align: center;
+}
+
+.plinko-button-half {
+    border-right: 2px solid #3b3b3b;
+}
+
+#plinko-bet-amount-input {
+    height: 80%;
+    width: 63%;
+    padding-left: 6%;
+    border: none;
+    background-color: #3b3b3b;
+    border-radius: 4px;
+    font-size: 100%;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ctake-text {
+    width: 90%;
+    margin: 1% auto;
+    height: 5%;
+    background-color: #252525;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctake-text-inner {
+    width: 86%;
+    margin: 0 auto;
+}
+
+.ctake-select {
+    width: 90%;
+    margin: 1% auto;
+    height: 6%;
+    background-color: #252525;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctake-select select {
+    width: 97%;
+    height: 85%;
+    margin: 0 auto;
+    background-color: #3b3b3b;
+    border: none;
+    padding-left: 4%;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.ctake-bet-button {
+    width: 90%;
+    margin: 4% auto;
+    height: 9%;
+    border-radius: 4px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    color: #013e01;
+    background: #00e701;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+#plinko-screen {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#plinko-screen .bucket {
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#plinko-screen [heading]:not([heading=""]) {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+#plinko-screen [heading="0"] {
+    animation-name: bounceLeft;
+}
+
+@keyframes bounceLeft {
+    0% {
+        transform: translate(-50%, -125%)
+    }
+
+    50% {
+        transform: translate(-100%, -250%)
+    }
+
+    100% {
+        transform: translate(-50%, -125%)
+    }
+}
+
+#plinko-screen [heading="1"] {
+    animation-name: bounceRight;
+}
+
+@keyframes bounceRight {
+    0% {
+        transform: translate(-50%, -125%)
+    }
+
+    50% {
+        transform: translate(0%, -250%)
+    }
+
+    100% {
+        transform: translate(-50%, -125%)
+    }
+}
+
+#plinko-screen [heading="2"] {
+    animation-name: fallAway;
+}
+
+@keyframes fallAway {
+    0% {
+        transform: translate(-50%, -125%) scale(1)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0)
+    }
+}

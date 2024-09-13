@@ -1,0 +1,36 @@
+return { -- You can comment out/remove the ones you don't use.
+    -- pillbox = {
+    --     coords = {
+    --         vec3(341.0, -593.03, 43.28),
+    --         vec3(338.2, -583.68, 74.17),
+    --     },
+    --     spots = {
+    --         {destination = vec3(340.18, -592.76, 43.28), label = 'Ground Floor', restricted = false},
+    --         {destination = vec3(339.25, -584.01, 74.16), label = 'Rooftop', restricted = true},
+    --     }
+    -- },
+    -- central = {
+    --     coords = {
+    --         vec3(345.83, -1407.99, 32.5),
+    --         vec3(345.45, -1408.0, 36.52),
+    --         vec3(317.34, -1421.89, 29.92),
+    --         vec3(338.23, -1424.78, 46.51),
+    --     },
+    --     spots = {
+    --         {destination = vec3(345.93, -1409.76, 32.51), label = 'Ground Floor', restricted = false},
+    --         {destination = vec3(345.99, -1409.7, 36.52), label = 'First Floor', restricted = false},
+    --         {destination = vec3(319.1, -1421.5, 29.92), label = 'EMS Garage', restricted = true},
+    --         {destination = vec3(339.71, -1424.41, 46.51), label = 'Rooftop', restricted = true},
+    --     }
+    -- },
+    -- paleto = {
+    --     coords = {
+    --         vec3(-265.39, 6325.22, 32.45),
+    --         vec3(-255.99, 6315.66, 37.62),
+    --     },
+    --     spots = {
+    --         {destination = vec3(-263.22, 6325.86, 32.45), label = 'Ground Floor', restricted = false},
+    --         {destination = vec3(-257.36, 6315.96, 37.62), label = 'Rooftop', restricted = true},
+    --     }
+    -- },
+}

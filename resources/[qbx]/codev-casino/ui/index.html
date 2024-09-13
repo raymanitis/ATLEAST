@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="games/mines/mines.css">
+    <link rel="stylesheet" href="games/dice/dice.css">
+    <link rel="stylesheet" href="games/plinko/plinko.css">
+    <link rel="stylesheet" href="games/veniator/veniator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="notification">
+        <div class="notification-title">TEST</div>
+        <div class="notification-desc">TEST DESC</div>
+    </div>
+    <div class="menus">
+        <div class="couponmenu menu" data-state="closed">
+            <div class="menu-title">
+                <div class="menu-header" style="width: 18%;">Coupon</div>
+                <div class="line" style="width: 62%;"></div>
+                <div class="line" id="hide-coupon" style="width: 4%;
+                background: #fff;
+                margin-left: 6%;;"></div>
+            </div>
+            <div class="coupon-to-hide">
+                <div class="coupons"></div>
+                <div class="coupon-prices">
+                    <div class="coupon-total-odd coupon-price-container">
+                        <div class="coupon-price-title">Max. Odd</div>
+                        <div class="coupon-price" id="odd-total">---</div>
+                    </div>
+                    <div class="coupon-total-price coupon-price-container">
+                        <div class="coupon-price-title">Coupon Total ($)</div>
+                        <input id="totalPrice" type="number" placeholder="$---" min="0" />
+                    </div>
+                </div>
+                <div class="line" style="margin:0 auto;width: 90%;"></div>
+                <div class="max-win">
+                    <div class="max-win-title">Maximum Win</div>
+                    <div class="max-win-price" id="maxWin">$---</div>
+                </div>
+                <div class="icons-and-buttons">
+                    <div class="icons">
+                        <img src="imgs/remove.png">
+                        <img src="imgs/save.png">
+                    </div>
+                    <div class="play-coupon" id="playCoupon">Play Now</div>
+                </div>
+            </div>
+            <div class="coupon-bottom">
+                <img src="imgs/bottom-coupon.png">
+            </div>
+        </div>
+        <div class="walletmenu menu" data-state="closed">
+            <img class="closebutton" src="imgs/close.png">
+            <div class="walletcoin">
+                <img id="goldcoin" src="imgs/goldcoin.png" width="18px" style="margin-left: 15%;">
+                <div class="balance" id="wallet-balance" style="margin-left:15%;text-align: center;">$157.1237</div>
+            </div>
+            <div class="title" data-lang="WALLET_HEADER">WALLET</div>
+            <div class="desc" data-lang="WALLET_DESC">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <div class="payment-methods">
+                <div class="left-side">
+                    <div class="payment-title">
+                        <div class="line"></div>
+                        <div class="payment-title-text" data-lang="WALLET_WITHDRAW">WITHDRAW</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="payment-rectangle">
+                        <div class="payment-withdraw" style="margin-top: 4%;">
+                            <div class="input-label" style="margin-left: 5.5%;padding-bottom:1%;" data-lang="WALLET_AMOUNT">Amount</div>
+                            <div class="menu-input">
+                                <label class="dollar-label" for="amount">$</label>
+                                <input id="withdraw-input" type="url" placeholder="5200" step="1"></input>
+                                <img src="imgs/money.png">
+                            </div>
+                            <div class="input-label" style="margin-left: 5.5%;padding-bottom:1%;">Withdraw Method</div>
+                            <div class="menu-select" id="withdraw-options">
+                                <div class="menu-option option-selected" data-type="bank">
+                                    <img src="imgs/menu-selected.png">
+                                    <div class="menu-option-text option-selected">Bank Account</div>
+                                </div>
+                                <div class="menu-option" data-type="money">
+                                    <img src="imgs/menu-select-item.png">
+                                    <div class="menu-option-text">Pay with cash</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-submit" id="withdraw-button" style="margin-top:5%;background-color: #1CE28F; width: 70%;font-size: 1.3rem;height: 5%;line-height: 100%;color: rgba(0, 0, 0, 0.57);">WITHDRAW</div>
+                </div>
+                <div class="right-side">
+                    <div class="payment-title">
+                        <div class="line"></div>
+                        <div class="payment-title-text" data-lang="WALLET_DEPOSIT">DEPOSIT</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="payment-rectangle">
+                        <div class="payment-deposit" style="margin-top: 4%;">
+                            <div class="input-label" style="margin-left: 5.5%;padding-bottom:1%;" data-lang="WALLET_AMOUNT">Amount</div>
+                            <div class="menu-input">
+                                <label class="dollar-label" for="amount" style="color:#1CA7E2;">$</label>
+                                <input id="deposit-input" type="url" placeholder="5200" step="1"></input>
+                                <img src="imgs/money.png">
+                            </div>
+                            <div class="input-label" style="margin-left: 5.5%;padding-bottom:1%;">Deposit Method</div>
+                            <div class="menu-select" id="deposit-options">
+                                <div class="menu-option option-selected2" data-type="bank">
+                                    <img src="imgs/menu-selected2.png">
+                                    <div class="menu-option-text">Bank Account</div>
+                                </div>
+                                <div class="menu-option" data-type="money">
+                                    <img src="imgs/menu-select-item.png">
+                                    <div class="menu-option-text">Pay with cash</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-submit" id="deposit-button" style="margin-top:5%;background-color: #1CA7E2; width: 70%;font-size: 1.3rem;height: 5%;line-height: 100%;color: rgba(0, 0, 0, 0.57);">DEPOSIT</div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="chatmenu menu" data-state="closed">
+            <div class="menu-title">
+                <div class="menu-header" style="width: 13%;">Chat</div>
+                <div class="line" style="width: 76%;"></div>
+            </div>
+            <div class="chat-list"></div>
+            <div class="menu-input">
+                <input type="url" id="chat-message-input" placeholder="Text a message" style="font-weight: bold;"></input>
+                <img src="imgs/message.png" id="send-message">
+            </div>
+        </div>
+        <div class="avatarmenu menu" data-state="closed">
+            <div class="menu-title">
+                <div class="menu-header">Edit Photo</div>
+                <div class="line"></div>
+            </div>
+            <div class="avatar-loading"></div>
+            <div class="pfp-image">
+            </div>
+            <div class="pfp-change">
+                <div class="input-label">Image Url</div>
+                <div class="menu-input">
+                    <input type="url" id="pfp-input" placeholder="https://media.codev.art/attachments/pfp.png"></input>
+                    <img src="imgs/submit.png" id="update-pfp">
+                </div>
+            </div>
+            <div class="nick-change">
+                <div class="input-label">Nickname</div>
+                <div class="menu-input">
+                    <input type="url" id="nickname-input" placeholder="codeV-scripts"></input>
+                    <img src="imgs/submit.png" id="update-name">
+                </div>
+            </div>
+            <div class="menu-submit" id="edit-submit">Save Changes</div>
+        </div>
+    </div>
+    <div class="ui">
+        <div class="container">
+            <div class="header">
+                <div class="title">V&hairsp;T&hairsp;A&hairsp;K&hairsp;E</div>
+                <div class="header-right">
+                    <div class="coin">
+                        <img id="goldcoin" src="imgs/goldcoin.png" width="18px">
+                        <div class="balance" id="balance">$157,647</div>
+                        <img id="plus-sign" src="imgs/plus.png" width="15px">
+                    </div>
+                    <div class="player">
+                        <div class="avatar"></div>
+                        <div class="h-sidebar">
+                            <img src="imgs/arrow.png">
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <img src="imgs/chat.png">
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <ul>
+                        <li data-page="homepage" class="selected"><a ><img src="imgs/homepage.png" width="25px"></a></li>
+                        <li data-page="sports"><a><img src="imgs/flame.png" width="25px"></a></li>
+                        <li data-page="casino"><a><img src="imgs/cards.png" width="25px"></a></li>
+                    </ul>
+                    <ul>
+                        <li data-page="leave"><a><img src="imgs/leave.png" width="25px"></a></li>
+                    </ul>
+                </div>
+                <div class="content-items" id="homepage">
+                    <div class="banner"></div>
+                    <div class="sub-banners">
+                        <div class="sub-banner">
+                            <div class="sub-banner-image" id="casino-image">
+                                <div class="sub-banner-image-title" id="sub-banner-text-1">CASINO</div>
+                                <div class="sub-banner-image-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</div>
+                            </div>
+                            <div class="sub-banner-button" id="casino-button">Go to Casino</div>
+                        </div>
+                        <div class="sub-banner">
+                            <div class="sub-banner-image" id="sports-image">
+                                <div class="sub-banner-image-title" id="sub-banner-text-2">SPORTS</div>
+                                <div class="sub-banner-image-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</div>
+                            </div>
+                            <div class="sub-banner-button" id="sports-button">Go to Sportsbook</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-items" id="casino">
+                    <div class="casino-title"><img src="imgs/originals.png" />CTAKE Originals</div>
+                    <div class="casino-items">
+                        <div class="casino-item veniator">
+                            <div class="casino-item-title" style="color:#E30639;">VENIATOR</div>
+                            <div class="casino-item-desc">CTAKE ORIGINALS</div>
+                        </div>
+                        <div class="casino-item plinko">
+                            <div class="casino-item-title" style="color:#e38b06;">PLINKO</div>
+                            <div class="casino-item-desc">CTAKE ORIGINALS</div>
+                        </div>
+                        <div class="casino-item dice">
+                            <div class="casino-item-title" style="color:#17A4F4;">DICE</div>
+                            <div class="casino-item-desc">CTAKE ORIGINALS</div>
+                        </div>
+                        <div class="casino-item mines">
+                            <div class="casino-item-title" style="color:#17A4F4;">MINES</div>
+                            <div class="casino-item-desc">CTAKE ORIGINALS</div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="content-items" id="sports">
+                    <div class="categories">
+                        <div class="category category-selected" data-category="live-and-upcoming">
+                            <div class="category-title">Live & Upcoming</div>
+                            <div class="category-desc">You can see live & upcoming soccer matches through there^-^</div>
+                        </div>
+                        <div class="category" style="margin-left: 13.5%;" data-category="bets">
+                            <div class="category-title" style="margin-top:7%;">Bets</div>
+                            <div class="category-desc">You can see your bets through there^-^</div>
+                        </div>
+                    </div>
+                    <div class="live-and-upcoming" style="display: block;">
+                        <div class="live-matches">
+                            <div class="sports-title" id="live-matches-title">Live Matches <span style="color:#7E7E7E6B;">(0)</span></div>
+                            <div class="current-matches"></div>
+                        </div>
+                        <div class="upcoming-matches">
+                            <div class="sports-title" id="upcoming-matches-title">Upcoming Matches <span style="color:#7E7E7E6B;">(0)</span></div>
+                            <div class="search-bar">
+                                <input type="text" id="upcoming-match-search" placeholder="Search for a match" />
+                            </div>
+                            <div class="current-upcoming-matches"></div>
+                        </div>
+                    </div>
+                    <div class="bets" style="display: none;"></div>
+                </div>
+
+                <div class="content-games" id="mines">
+                    <div class="ctake-left">
+                        <div class="ctake-label">Bet Amount</div>
+                        <div class="ctake-bet-amount">
+                            <input type="number" id="mines-bet-amount-input" value="1.00" min="1" max="5000" />
+                            <div class="ctake-button mines-button-half">½</div>
+                            <div class="ctake-button mines-button-double">2x</div>
+                        </div>
+                        <div class="ctake-label">Mines</div>
+                        <div class="ctake-select mines-mine-select">
+                            <select>
+                                <option value="3" selected="selected">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                            </select>
+                        </div>
+
+                        <div class="ctake-bet-button mines-bet-button">Bet</div>
+                        <div class="ctake-bet-button mines-cashout-button disabled">Cashout ($0)</div>
+                    </div> 
+
+                    <div class="mines-game-screen">
+                        <div id="mining_field">
+                            <ul id='tiles'>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="content-games" id="dice">
+                    <div class="ctake-left">
+                        <div class="ctake-label">Bet Amount</div>
+                        <div class="ctake-bet-amount">
+                            <input type="number" id="dice-bet-amount-input" value="1.00" min="1" max="5000" />
+                            <div class="ctake-button dice-button-half">½</div>
+                            <div class="ctake-button dice-button-double">2x</div>
+                        </div>
+                        <div class="ctake-label" data-lang="PROFIT_TO_WIN">Profit To Win</div>
+                        <div class="ctake-text">
+                            <div class="ctake-text-inner" id="dice-profit-to-win">1.9071</div>
+                        </div>
+
+                        <div class="ctake-bet-button dice-bet-button">Bet</div>
+                    </div>
+
+                    <div class="dice-game-screen">
+                        <div class="dice-game-inner">
+                            <div class="chances-wrapper">
+                                <div class="dice-chance-item">0
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="dice-chance-item">25
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="dice-chance-item">50
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="dice-chance-item">75
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="dice-chance-item">100
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs-wrapper">
+                            <input id="dice-range" type="range" min="0" max="100" step="1" minlength="100">
+                        </div>
+
+                        <div class="dice-history"></div>
+
+                        <div class="dice-result">
+                            <div class="dice-image">
+                                <div class="dice-text">56.17</div>
+                            </div>
+                        </div>
+
+                        <div class="dice-details">
+                            <div class="dice-detail">
+                                <div class="ctake-label">Multiplier</div>
+                                <div class="ctake-text">
+                                    <div class="ctake-text-inner" id="multiplier-text">1.9071</div>
+                                </div>
+                            </div>
+
+                            <div class="dice-detail">
+                                <div class="ctake-label">Roll Over</div>
+                                <div class="ctake-text">
+                                    <div class="ctake-text-inner" id="roll-over-text">50.00</div>
+                                </div>
+                            </div>
+
+                            <div class="dice-detail">
+                                <div class="ctake-label">Win Chance</div>
+                                <div class="ctake-text">
+                                    <div class="ctake-text-inner" id="win-chance-text">50.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-games" id="plinko">
+                    <div class="ctake-left">
+                        <div class="ctake-label">Bet Amount</div>
+                        <div class="ctake-bet-amount">
+                            <input type="number" id="plinko-bet-amount-input" value="1.00" min="1" max="5000" />
+                            <div class="ctake-button plinko-button-half">½</div>
+                            <div class="ctake-button plinko-button-double">2x</div>
+                        </div>
+                        <div class="ctake-label">Risk</div>
+                        <div class="ctake-select plinko-risk-select">
+                            <select>
+                                <option value="low">Low</option>
+                                <option value="medium" selected="selected">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="ctake-label">Rows</div>
+                        <div class="ctake-select plinko-row-select">
+                            <select>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16" selected="selected">16</option>
+                            </select>
+                        </div>
+
+                        <div class="ctake-bet-button plinko-bet-button">Bet</div>
+                    </div>
+                    <div class="plinko-game-screen">
+                        <div id="plinko-screen"></div>
+                    </div>
+                </div>
+
+                <div class="content-games" id="veniator">
+                    <div class="veniator-my-bets">
+                        <div class="veniator-my-bets-title">My Bets</div>
+
+                        <div class="veniator-my-bets-table">
+                            <div class="table-header">
+                                <div class="table-header-item">Time</div>
+                                <div class="table-header-item">Bet</div>
+                                <div class="table-header-item">X</div>
+                                <div class="table-header-item">Win</div>
+                            </div>
+                            <div class="table-body">
+                                <div class="table-body-item">
+                                    <div class="table-body-item-inner body-item-time">1:44</div>
+                                    <div class="table-body-item-inner">$100</div>
+                                    <div class="table-body-item-inner body-item-multiply f2x">1.44x</div>
+                                    <div class="table-body-item-inner">$144</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-side">
+                        <div class="history-box">
+                            <!-- <div class="history-item m1x">1.44x</div>
+                            <div class="history-item m2x">2.06x</div>
+                            <div class="history-item m10x">2.45x</div> -->
+                        </div>
+    
+                        <div class="veniator-screen">
+                            <div class="veniator-container">
+                                <!-- <div class="veniator-square1"></div> -->
+                                <!-- <div class="veniator-square2"></div> -->
+                
+                                <div class="veniator-game-container">
+                                    <img class="veniator-run-gif" src="./imgs/runImage.png">
+                                </div>
+                
+                                <div class="fellDown-text">FELL DOWN!</div>
+                                <div class="veniator-coeff-duration">1.0x</div>
+                
+                                <div class="veniator-starting">
+                                    <div class="veniator-starting-tab">
+                                        <div class="propeller-logo"></div>
+                                        <div class="veniator-starting-text">WAITING FOR NEXT ROUND</div>
+                                        <div class="veniator-loading">
+                                            <div class="veniator-loading-inner" style="width: 60%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="bet-buttons">
+                            <div class="bet-button">
+                                <div class="bet-amount">
+                                    <div class="spinner">
+                                        <div class="spinner-button spinner-button-down"></div>
+                                        <input type="number" id="bet-amount-first" value="1.00" min="1" max="5000" />
+                                        <div class="spinner-button spinner-button-up"></div>
+                                    </div>
+
+                                    <div class="plus-buttons">
+                                        <div class="plus-button">1</div>
+                                        <div class="plus-button">2</div>
+                                        <div class="plus-button">5</div>
+                                        <div class="plus-button">10</div>
+                                    </div>
+                                </div>
+                                <div class="place-bet">
+                                    <div class="place-bet-button" id="bet-button-first">BET<br>1.00 USD</div>
+                                </div>
+                            </div>
+                            <div class="bet-button">
+                                <div class="bet-amount">
+                                    <div class="spinner">
+                                        <div class="spinner-button spinner-button-down"></div>
+                                        <input type="number" id="bet-amount-second" value="1.00" min="1" max="5000" />
+                                        <div class="spinner-button spinner-button-up"></div>
+                                    </div>
+
+                                    <div class="plus-buttons">
+                                        <div class="plus-button">1</div>
+                                        <div class="plus-button">2</div>
+                                        <div class="plus-button">5</div>
+                                        <div class="plus-button">10</div>
+                                    </div>
+                                </div>
+                                <div class="place-bet">
+                                    <div class="place-bet-button" id="bet-button-second">BET<br>1.00 USD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="circle-progress.min.js"></script>
+<script src="games/mines/mines.js"></script>
+<script src="games/dice/dice.js"></script>
+<script src="games/plinko/plinko.js"></script>
+<script src="games/veniator/veniator.js"></script>
+<script src="app.js"></script>
+</html>
